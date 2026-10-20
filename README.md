@@ -21,7 +21,28 @@ cp -r wuz-skills/skills/batch-image-compress ~/.claude/skills/
 **Cursor**：复制到项目里的 `.cursor/skills/`。
 **Codex**：复制到 `~/.codex/skills/`。
 
-装好后直接说「帮我批量压一下 ./assets 里的图」即可。
+## 怎么用：批量压缩图片
+
+**1. 装压缩工具（一次就好）**
+```sh
+brew install pngquant oxipng mozjpeg dssim   # macOS
+```
+
+**2. 在 Claude Code / Cursor / Codex 里直接说**
+
+> 帮我批量压一下 `./assets/ui` 里的图，用高质量档，输出到 `./assets/ui_min`
+
+三个档位：
+- **高质量**（默认）：几乎看不出区别，适合按钮、图标、带小字的 UI
+- **均衡**：大约是 TinyPNG 的水平，体积通常能减 60% 左右
+- **极限**：体积最小，适合背景大图
+
+**3. 你会拿到**
+- 新文件夹里的压缩图，**原图不会被改动**
+- 一张表：每张图的原大小、新大小、压缩率、画质分，以及是否保留了原图
+- 几张难压的图（渐变、半透明、小字）的前后放大对比
+
+压完反而变大，或者画质不达标的图，会自动保留原图；透明背景会保留；已经压过的图再处理时会自动跳过。
 
 ## 目录结构
 
