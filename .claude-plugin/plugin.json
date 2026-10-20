@@ -1,0 +1,8 @@
+{
+  "name": "wuz-skills",
+  "description": "Practical Agent Skills: batch image compression and more.",
+  "version": "0.1.0",
+  "author": { "name": "wuzhuo01" },
+  "repository": "https://github.com/wuzhuo01/wuz-skills",
+  "license": "MIT"
+}

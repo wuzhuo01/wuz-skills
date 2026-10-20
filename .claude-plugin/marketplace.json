@@ -1,0 +1,15 @@
+{
+  "name": "wuz-skills",
+  "owner": { "name": "wuzhuo01" },
+  "metadata": {
+    "description": "A growing toolbox of practical Agent Skills."
+  },
+  "plugins": [
+    {
+      "name": "wuz-skills",
+      "source": "./",
+      "description": "Practical Agent Skills: batch image compression and more.",
+      "version": "0.1.0"
+    }
+  ]
+}
